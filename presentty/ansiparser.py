@@ -182,7 +182,7 @@ class ANSIParser(object):
                 self.moveTo(0, self.y)
                 continue
             if char == '\n':
-                self.moveTo(self.x, self.y+1)
+                self.moveTo(0, self.y+1)
                 continue
             if not seq:
                 self.text_lines[self.y][self.x] = char
